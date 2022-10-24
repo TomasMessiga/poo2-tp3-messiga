@@ -1,3 +1,3 @@
 test("Prueba inicio",()=>{
-    expect("iniciar").tobe("iniciar")
+    expect("iniciar").toBe("iniciar")
 })
