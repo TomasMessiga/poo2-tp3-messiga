@@ -1,0 +1,24 @@
+{
+  "name": "poo2-tp3-messiga",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: Shoul run test with command npm run testpush\" && exit 1",
+    "testpush": "git add . && git commit -m \"TDD iteration\" && git push && jest"
+    },
+    
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasMessiga/poo2-tp3-messiga.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomasMessiga/poo2-tp3-messiga/issues"
+  },
+  "homepage": "https://github.com/TomasMessiga/poo2-tp3-messiga#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
+}
