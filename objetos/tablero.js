@@ -70,10 +70,10 @@ function Tablero(){
         numeroEnRangoNumericoPositivo(cord1,cord2)
 
        
-        const efectuarEncendido=function(){
+        let efectuarEncendido=function(){
             return 1;
         }
-        const analizarColumna=function(item,indez,arr){
+        let analizarColumna=function(item,indez,arr){
             arr[indez]=item.map(efectuarEncendido);
         }
 
