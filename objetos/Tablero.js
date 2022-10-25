@@ -10,7 +10,11 @@ function Tablero(){
         this.luces.push(0);
     }
     this.lucesTotales=function(){
-        return 1;
+        let cont=0;
+        this.luces.forEach(element => {
+            cont++;
+        });
+        return cont;
     }
 }
 
