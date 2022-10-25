@@ -5,6 +5,7 @@
  */
  
 
+
 function Tablero(){
     this.luces=new Array();
 
