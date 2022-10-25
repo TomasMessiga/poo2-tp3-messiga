@@ -33,7 +33,14 @@ function Tablero(){
         1:0,
         0:1,
     }
-
+    
+    const TableroNull =function(){
+        this.luces=undefined;    
+        this.encender=function(cord1,cord2){throw("El tablero no puede encender luces")}
+        this.apagar=function(cord1,cord2){throw("No funcionan las luces, por ende todas las luces estan apagadas")}
+        this.cambiar=function(cord1,cord2){throw("No se pueden alterar el estado de las luces")}
+        this.lucesEncendidas=()=>{return 0}
+    }
 
     //refactor loops
     this.agragarLuces=function(filas,columnas){
@@ -57,13 +64,6 @@ function Tablero(){
         return cont;
     }
     this.prueba=function(){
-        function TableroNull(){
-            this.luces=undefined;    
-            this.encender=function(cord1,cord2){throw("El tablero no puede encender luces")}
-            this.apagar=function(cord1,cord2){throw("No funcionan las luces, por ende todas las luces estan apagadas")}
-            this.cambiar=function(cord1,cord2){throw("No se pueden alterar el estado de las luces")}
-            this.lucesEncendidas=()=>{return 0}
-        }
         if (this.lucesTotales()==0){
             return new TableroNull();
         }      
