@@ -160,3 +160,14 @@ test("Prueba tablero (luces encendidas) 4",()=>{
     tablero.apagar([6,6],[6,7]);
     expect(tablero.lucesEncendidas()).toBe(10000-2);
 })
+
+
+
+test("Prueba tablero (erro en dimesiones)",()=>{
+    const tableroArmado=new Tablero();
+    try{
+        tableroArmado.agragarLuces(0,-1);
+    } catch (e){
+        expect(e.message).toBe("Error en las dimensiones establecidas");
+    }
+})
