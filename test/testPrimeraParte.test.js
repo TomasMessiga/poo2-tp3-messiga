@@ -36,7 +36,7 @@ test("Prueba tablero: incorporar luces (cant 10000)",()=>{
 
 test("Prueba tablero al encenderse",()=>{
     const tableroArmado=new Tablero();
-    tableroArmado.agragarLuces(100,100);
+    tableroArmado.agragarLuces(1,1);
     const tableroUtil=tableroArmado.prueba();
     console.log(tableroUtil);
     expect(tableroUtil===undefined).toBe(true);
