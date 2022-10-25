@@ -24,7 +24,7 @@ function Tablero(){
         numeroNoNegativo(cord2[0])
         numeroNoNegativo(cord2[1])
         if (cord2[0]<cord1[0] || cord2[1]<cord1[1]){
-            throw("Error en las dimensiones establecidas")
+            throw("Error en el rango establecido")
         }
     }
 

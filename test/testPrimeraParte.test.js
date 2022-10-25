@@ -188,6 +188,6 @@ test("Prueba tablero luces (error en el rango)",()=>{
     try{
         tablero.encender([3,3],[2,2]);
     } catch (e){
-        expect(e).toBe("Error en las dimensiones establecidas");
+        expect(e).toBe("Error en el rango establecido");
     }
 })
