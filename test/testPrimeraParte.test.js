@@ -1,4 +1,5 @@
 const TableroInactivo=require("../objetos/tableroInactivo.js");
+const Tablero=require("../objetos/tablero.js");
 
 test("Prueba tablero: incorporar luces (cant 1)",()=>{
     const tablero=new TableroInactivo();
