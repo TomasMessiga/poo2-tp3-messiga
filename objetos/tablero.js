@@ -41,9 +41,7 @@ function Tablero(){
         return tableroUtil;
     }
 
-    this.encender=function(){
-        this.luces[0][0]=1;
-    }
+
 
 
 }
