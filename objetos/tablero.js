@@ -8,7 +8,6 @@
 
 function Tablero(){
     this.luces=new Array();
-    this.limites=[0,0];
 
     const numeroPositivo=function(numero){
         if (numero<=0){
@@ -45,8 +44,6 @@ function Tablero(){
     this.agragarLuces=function(filas,columnas){
         numeroPositivo(filas)
         numeroPositivo(columnas)
-        this.limites[0]=filas;
-        this.limites[1]=columnas;
         for (let i=0;i<filas;i++){
             let filaAuxiliar=new Array();
             for (let f=0;f<columnas;f++){
