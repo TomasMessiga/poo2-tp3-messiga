@@ -50,6 +50,9 @@ function Tablero(){
             }
         }
     }
+    this.apagar=function(cord1,cord2){
+        this.luces[0][0]=0;
+    }
 
 }
 
