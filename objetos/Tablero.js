@@ -8,6 +8,9 @@ function Tablero(){
     this.luces=new Array();
 
     this.esTablero=function(){
+        if (this.lucesTotales==0){
+            return false;
+        }
         return true;
     }
     this.agragarLuces=function(filas,columnas){
