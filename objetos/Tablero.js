@@ -22,7 +22,9 @@ function Tablero(){
     this.lucesTotales=function(){
         let cont=0;
         this.luces.forEach(element => {
-            cont++;
+            this.luces.forEach(element => {
+                cont++;
+            });       
         });
         return cont;
     }
