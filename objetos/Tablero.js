@@ -6,7 +6,9 @@ function Tablero(){
     this.esTablero=function(){
         return true;
     }
-    
+    this.agregarLuces=function(cantidad){
+        this.luces.push(0);
+    }
 }
 
 
