@@ -187,6 +187,7 @@ test("Prueba tablero luces (error en el rango)",()=>{
     const tablero=tableroArmado.prueba();
     try{
         tablero.apagar([3,3],[2,2]);
+        var a=1/0;
     } catch (e){
         expect(e).toBe("Error en el rango establecido");
     }
