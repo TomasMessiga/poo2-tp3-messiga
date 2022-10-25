@@ -13,11 +13,16 @@ function Tablero(){
             throw ("Error en las dimensiones establecidas")
         }
     }
+    const numeroNoNegativo=function(numero){
+        if (numero<0){
+            throw ("Error en las dimensiones establecidas")
+        }
+    }
     const numeroEnRangoNumericoPositivo=function(cord1,cord2){
-        numeroPositivo(cord1[0])
-        numeroPositivo(cord1[1])
-        numeroPositivo(cord2[0])
-        numeroPositivo(cord2[1])
+        numeroNoNegativo(cord1[0])
+        numeroNoNegativo(cord1[1])
+        numeroNoNegativo(cord2[0])
+        numeroNoNegativo(cord2[1])
         if (cord2[0]<cord1[0] || cord2[1]<cord1[1]){
             throw("")
         }
