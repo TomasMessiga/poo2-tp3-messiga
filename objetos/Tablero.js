@@ -1,4 +1,8 @@
 
+/** indicaciones
+ *  0 (luz inactiva)
+ *  1 (luz activa)
+ */ 
 
 function Tablero(){
     this.luces=new Array();
@@ -7,6 +11,13 @@ function Tablero(){
         return true;
     }
     this.agragarLuces=function(filas,columnas){
+        for (let i=0;i<filas;i++){
+            let filaAuxiliar=new Array();
+            for (let f=0;f<columnas;f++){
+                filaAuxiliar.push(0);
+            }
+            this.luces.push(filaAuxiliar);
+        }
         this.luces.push(0);
     }
     this.lucesTotales=function(){
