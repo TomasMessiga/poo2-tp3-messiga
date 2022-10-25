@@ -57,8 +57,15 @@ function Tablero(){
         return cont;
     }
     this.prueba=function(){
+        function TableroNull(){
+            this.luces=undefined;    
+            this.encender=function(cord1,cord2){throw("El tablero no puede encender luces")}
+            this.apagar=function(cord1,cord2){throw("No funcionan las luces, por ende todas las luces estan apagadas")}
+            this.cambiar=function(cord1,cord2){throw("No se pueden alterar el estado de las luces")}
+            this.lucesEncendidas=()=>{return 0}
+        }
         if (this.lucesTotales()==0){
-            return undefined;
+            return new TableroNull();
         }      
         let tableroUtil=new Tablero();
         tableroUtil.luces=this.luces;
