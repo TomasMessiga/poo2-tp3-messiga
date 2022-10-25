@@ -4,7 +4,7 @@ const contadorDeLucesActivas=(arreglo)=>{
     var cont=0
     arreglo.forEach(aux => {
         aux.forEach(element => {
-            if (element==1){
+            if (element>=1){
                 cont++;
             }
         });
