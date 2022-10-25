@@ -103,7 +103,7 @@ function Tablero(){
         } */
         const mapear=function(luz){return 1;};
         this.luces.forEach(aux1 => {
-            aux1.map(filtrado);   
+            aux1.map(mapear);   
         });
 
     }
