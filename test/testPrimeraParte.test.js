@@ -54,7 +54,7 @@ test("Prueba encender tablero 1",()=>{
     tablero.encender([0,0],[0,0]);
     expect(tablero.luces[0][0]).toBe(1);
 })
-/**
+/
 test("Prueba encender tablero 2",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
@@ -63,4 +63,4 @@ test("Prueba encender tablero 2",()=>{
     expect(contadorDeLucesActivas(tablero.luces)).toBe(9);
 })
 
- */
+
