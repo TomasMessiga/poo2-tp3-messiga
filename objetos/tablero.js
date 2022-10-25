@@ -10,7 +10,7 @@ function Tablero(){
 
     const numeroPositivo=function(numero){
         if (numero<=0){
-            throw ("Error en las dimensiones establecidas")
+            throw (" ")
         }
     }
     const numeroEnRangoNumericoPositivo=function(cord1,cord2){
