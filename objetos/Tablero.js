@@ -6,6 +6,7 @@ function Tablero(){
     this.esTablero=function(){
         return true;
     }
+    
 }
 
 
