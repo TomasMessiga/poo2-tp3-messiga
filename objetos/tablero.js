@@ -122,11 +122,18 @@ function Tablero(){
     }
     this.lucesEncendidas=()=>{
         let cont=0;
-        const criterio=(estado)=>{return estado==1};
-        this.luces.forEach(f,indice,arregloAux => {
-            cont+=(arregloAux[indice].filter(criterio)).length;
-        });
+        const filtrado=(estado)=>{return estado==1};
+        const analizarFila=(fila,inidice)=>{return (fila.filter(filtrado)).length};
+        let lucesActivas=this.luces.forEach(analizarFila);
 
+        /*
+        for (let i=0;i<this.luces.length;i++){
+            for (let j=0;j<this.luces[i].length;j++){
+                if (this.luces[i][j]==1){
+                    cont++;
+                }
+            }
+        }*/
         return cont;
     }
 
