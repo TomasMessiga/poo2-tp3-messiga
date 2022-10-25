@@ -18,7 +18,6 @@ function Tablero(){
             }
             this.luces.push(filaAuxiliar);
         }
-        this.luces.push(0);
     }
     this.lucesTotales=function(){
         let cont=0;
