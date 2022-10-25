@@ -177,6 +177,7 @@ test("Prueba tablero luces (error en dimesiones)",()=>{
     const tablero=tableroArmado.prueba();
     try{
         tablero.encender([0,0],[-1,-1]);
+        throw("")
     } catch (e){
         expect(e).toBe("Error en las dimensiones establecidas");
     }
@@ -186,7 +187,7 @@ test("Prueba tablero luces (error en el rango)",()=>{
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado.prueba();
     try{
-        tablero.apagar([3,3],[2,2]);
+        tablero.cambiar([3,3],[2,2]);
         throw("")
     } catch (e){
         expect(e).toBe("Error en el rango establecido");
