@@ -1,7 +1,7 @@
 const Tablero=require("../objetos/tablero.js");
 
 const contadorDeLucesActivas=(arreglo)=>{
-    let cont=0
+    var cont=0
     arreglo.forEach(element => {
         if (element==1){
             cont++;
