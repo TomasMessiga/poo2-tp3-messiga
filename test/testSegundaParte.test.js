@@ -103,7 +103,7 @@ test("Prueba apagar tablero 3",()=>{
     const tablero=tableroArmado.prueba();
     tablero.encender([0,0],[0,0]);
     tablero.encender([0,0],[0,1]);console.log(tablero.luces)
-    tablero.apagar([0,0],[0,0]);
+    tablero.apagar([0,0],[0,0]);console.log(tablero.luces)
     expect(contadorDeLucesActivas(tablero.luces)).toBe(1);
 })
 
