@@ -9,6 +9,9 @@ function Tablero(){
     this.agragarLuces=function(cantidad){
         this.luces.push(0);
     }
+    this.lucesTotales=function(){
+        return 1;
+    }
 }
 
 
