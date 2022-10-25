@@ -32,7 +32,7 @@ function Tablero(){
         });
         return cont;
     }
-    this.encender=function(){
+    this.prueba=function(){
         if (this.lucesTotales()==0){
             return undefined;
         }      
