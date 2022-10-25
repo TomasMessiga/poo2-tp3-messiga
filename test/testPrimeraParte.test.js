@@ -14,7 +14,7 @@ const contadorDeLucesActivas=(arreglo)=>{
 
 test("Prueba tablero: incorporar luces (cant 1)",()=>{
     const tablero=new Tablero();
-    tablero.agragarLuces(1,0);
+    tablero.agragarLuces(1,1);
     expect(tablero.lucesTotales()).toBe(1);
 })
 test("Prueba tablero: incorporar luces (cant 4)",()=>{
