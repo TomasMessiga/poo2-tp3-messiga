@@ -4,7 +4,7 @@
  *  1 (luz activa)
  */ 
 
-function Tablero(){
+function TableroInactivo(){
     this.luces=new Array();
 
     this.esTablero=function(){
@@ -31,7 +31,8 @@ function Tablero(){
         });
         return cont;
     }
+
 }
 
 
-module.exports=Tablero;
+module.exports=TableroInactivo;
