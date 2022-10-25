@@ -32,13 +32,11 @@ const estadoOpuesto={
 }
 const alterarIntensidad={
     sumar:function(estado){
-        try{
-            var errorIntencional=1/(estado-10);
+        if (estado<10){
             return estado+1;
-        } catch (e) {
-            return estado;
-        }
-    },
+       }
+       return estado;
+   },
 
     restar:function(estado){
         if (estado>0){
