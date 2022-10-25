@@ -111,5 +111,5 @@ test("Prueba cambiar tablero 1",()=>{
     const tablero=tableroArmado;
     tablero.encender([0,0],[0,0]);
     tablero.cambiar([0,0],[0,1]);
-    expect(tablero[0][0]+tablero[0][1]).toBe(1);
+    expect(tablero[0][0]+tablero[0][1]).toBe(0);
 })
