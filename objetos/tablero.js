@@ -123,7 +123,7 @@ function Tablero(){
     this.lucesEncendidas=()=>{
         let cont=0;
         const criterio=(estado)=>{return estado==1};
-        this.luces.forEach(fila,indice,arregloAux => {
+        this.luces.forEach(f,indice,arregloAux => {
             cont+=(arregloAux[indice].filter(criterio)).length;
         });
 
