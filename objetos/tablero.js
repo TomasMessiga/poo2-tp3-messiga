@@ -87,7 +87,7 @@ function Tablero(){
         }
 
         (this.luces).forEach(analizarColumna);
-*/
+
         for (let i=0;i<this.luces.length;i++){
             for (let j=0;j<this.luces[i].length;j++){
                 if (i>=cord1[0] && i<=cord2[0] && j>=cord1[1] && j<=cord2[1]){
@@ -95,6 +95,12 @@ function Tablero(){
                 }
             }
         }
+        */
+        for (let i=cord1[0];i<cord2[0]+1;i++){
+            for (let j=cord1[1];j<cord2[1]+1;j++){
+                    this.luces[i][j]=1;
+            }
+        } 
 
     }
     
