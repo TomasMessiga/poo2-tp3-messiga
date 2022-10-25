@@ -60,6 +60,7 @@ test("Prueba encender tablero 2",()=>{
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado;
     tablero.encender([0,0],[2,2]);
+    console.log(tablero.luces)
     expect(contadorDeLucesActivas(tablero.luces)).toBe(9);
 })
 
