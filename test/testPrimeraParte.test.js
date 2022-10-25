@@ -152,3 +152,11 @@ test("Prueba tablero (luces encendidas) 3",()=>{
     tablero.encender([0,0],[2,2]);
     expect(tablero.lucesEncendidas()).toBe(9);
 })
+test("Prueba tablero (luces encendidas) 4",()=>{
+    const tableroArmado=new Tablero();
+    tableroArmado.agragarLuces(100,100);
+    const tablero=tableroArmado;
+    tablero.encender([0,0],[100,100]);
+    tablero.apagar([6,6],[6,7]);
+    expect(tablero.lucesEncendidas()).toBe(10000-2);
+})
