@@ -122,13 +122,14 @@ function Tablero(){
     }
     this.lucesEncendidas=()=>{
         let cont=0;
-        for (let i=0;i<this.luces.length;i++){
-            for (let j=0;j<this.luces[i].length;j++){
-                if (this.luces[i][j]==1){
-                    cont++;
+        this.luces.forEach(aux1 => {
+            aux1.forEach(aux2 => {
+                if (aux2==1){
+                    cont++
                 }
-            }
-        }
+            });       
+        });
+
         return cont;
     }
 
