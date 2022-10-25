@@ -44,7 +44,7 @@ const alterarIntensidad={
         try{
             var errorIntencional=1/estado;
             return estado-1;
-        } catch (e) {
+        } catch (e) {console.log(estado)
             throw("No se puede reducir estado de intensidad de una luz apagada");
         }    
     },
