@@ -15,3 +15,8 @@ test("Prueba tablero: incorporar luces (cant 4)",()=>{
     tablero.agragarLuces(2,2);
     expect(tablero.lucesTotales()).toBe(4);
 })
+test("Prueba tablero: incorporar luces (cant 16)",()=>{
+    const tablero=new Tablero();
+    tablero.agragarLuces(4,4);
+    expect(tablero.lucesTotales()).toBe(16);
+})
