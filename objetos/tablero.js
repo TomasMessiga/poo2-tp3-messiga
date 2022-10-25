@@ -69,23 +69,24 @@ function Tablero(){
     this.encender=function(cord1,cord2){
         numeroEnRangoNumericoPositivo(cord1,cord2)
 
-  /*      
-        const efectuarEncendido=function(luz,luzIndice,luzFila){
+       
+        const efectuarEncendido=function(){
             return 1;
         }
+        const analizarColumna=function(item,indez,arr){
+            arr[indez]=item.map(efectuarEncendido);
+        }
 
-        this.luces.forEach(fila,indiceFila => {
-            this.luces[indiceFila]=fila.map(efectuarEncendido());
-        });
-*/
+        (this.luces).forEach(analizarColumna);
 
+ /*
         for (let i=0;i<this.luces.length;i++){
             for (let j=0;j<this.luces[i].length;j++){
                 if (i>=cord1[0] && i<=cord2[0] && j>=cord1[1] && j<=cord2[1]){
                     this.luces[i][j]=1;
                 }
             }
-        } 
+        } */
     }
     
     this.apagar=function(cord1,cord2){
