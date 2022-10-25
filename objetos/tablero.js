@@ -4,11 +4,6 @@
  *  1 (luz activa)
  */
  
-
-
-function Tablero(){
-    this.luces=undefined;
-
     const numeroPositivo=function(numero){
         if (numero<=0){
             throw ("Error en las dimensiones establecidas")
@@ -41,6 +36,11 @@ function Tablero(){
         this.cambiar=function(cord1,cord2){throw("No se pueden alterar el estado de las luces")}
         this.lucesEncendidas=()=>{return 0}
     }
+
+
+
+function Tablero(){
+    this.luces=undefined;
 
     this.agragarLuces=function(filas,columnas){
         numeroPositivo(filas)
