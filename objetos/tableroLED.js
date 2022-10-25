@@ -45,7 +45,7 @@ const alterarIntensidad={
         return estado;
     },
     sumarDoble:function(estado){
-        return this.sumar(estado)(this.sumar(estado));
+        return sumar(estado)(sumar(estado));
     }
 }
 
