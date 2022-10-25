@@ -60,8 +60,17 @@ function Tablero(){
         }
     }
     this.cambiar=function(cord1,cord2){
-       this.luces[0][0]=0;
-       this.luces[0][1]=1;
+        for (let i=0;i<this.luces.length;i++){
+            for (let j=0;j<this.luces[i].length;j++){
+                if (i>=cord1[0] && i<=cord2[0] && j>=cord1[1] && j<=cord2[1]){
+                    if (this.luces[i][j]==1){
+                        this.luces[i][j]==0;
+                    } else {
+                        this.luces[i][j]==1;
+                    }                
+                }
+            }
+        }
     }
 
 }
