@@ -41,17 +41,6 @@ function Tablero(){
         return tableroUtil;
     }
 
-    this.encender=function(){
-        let cont=0;
-        this.luces.forEach(aux1,fil => {
-            for(let i=0;i<aux1.length;i++) {
-                if (aux1[i]==1){
-                    this.luces[fil][col]=1;
-                }            
-            }       
-        });
-        return cont;    
-    }
 
 }
 
