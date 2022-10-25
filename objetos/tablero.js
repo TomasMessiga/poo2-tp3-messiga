@@ -26,7 +26,7 @@ function Tablero(){
     this.lucesTotales=function(){
         let cont=0;
         this.luces.forEach(aux1 => {
-            this.luces.forEach(aux2 => {
+            aux1.forEach(aux2 => {
                 cont++;
             });       
         });
