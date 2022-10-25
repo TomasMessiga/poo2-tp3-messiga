@@ -123,7 +123,7 @@ this.cambiar=function(cord1,cord2){
 }
 this.lucesEncendidas=()=>{
     let cont=0;
-    const filtrado=function(luz){return luz==1;};
+    const filtrado=function(luz){return luz>=1;};
     this.luces.forEach(aux1 => {
         cont+=(aux1.filter(filtrado)).length;   
     });
