@@ -34,6 +34,7 @@ const alterarIntensidad={
     sumar:function(estado){
         try{
             var errorIntencional=1/(estado-10);
+            return estado+1;
         } catch (e) {
             throw("Limite de intensidad alcanzado");
         }
@@ -42,6 +43,7 @@ const alterarIntensidad={
     restar:function(estado){
         try{
             var errorIntencional=1/estado;
+            return estado-1;
         } catch (e) {
             throw("No se puede reducir estado de intensidad de una luz apagada");
         }    
@@ -99,7 +101,7 @@ this.encender=function(cord1,cord2){
     numeroEnRangoNumericoPositivo(cord1,cord2)
     for (let i=cord1[0];i<=cord2[0];i++){
         for (let j=cord1[1];j<=cord2[1];j++){
-            alterarIntensidad.sumar(this.luces[i][j]);
+            this.luces[i][j]=alterarIntensidad.sumar(this.luces[i][j]);
         }
     }
 
