@@ -54,5 +54,12 @@ test("Prueba encender tablero 1",()=>{
     tablero.encender([0,0],[0,0]);
     expect(contadorDeLucesActivas(tablero.luces)).toBe(1);
 })
+test("Prueba encender tablero 2",()=>{
+    const tableroArmado=new Tablero();
+    tableroArmado.agragarLuces(100,100);
+    const tablero=tableroArmado;
+    tablero.encender([0,0],[2,2]);
+    expect(contadorDeLucesActivas(tablero.luces)).toBe(9);
+})
 
 
