@@ -38,8 +38,8 @@ test("Prueba tablero al encenderse",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(1,1);
     const tableroUtil=tableroArmado.prueba();
-    console.log(tableroUtil.name);
-    expect(Object.tableroUtil.name!=undefined).toBe(true);
+    const proto = Object.getPrototypeOf;
+    expect(proto(tableroUtil).constructor === Tablero).toBe(true);
 })
 test("Prueba tablero al encenderse (no funciona el tablero)",()=>{
     const tableroArmado=new Tablero();
