@@ -115,7 +115,7 @@ test("Prueba cambiar tablero 1",()=>{
     const tablero=tableroArmado.prueba();
     tablero.encender([0,0],[0,0]);
     tablero.cambiar([0,0],[0,1]);
-    expect(tablero.luces[0][0]+tablero.luces[0][1]).toBe(2);
+    expect(contadorDeLucesActivas(tablero.luces)).toBe(2);
 })
 test("Prueba cambiar tablero 2",()=>{
     const tableroArmado=new Tablero();
