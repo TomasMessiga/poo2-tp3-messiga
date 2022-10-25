@@ -73,6 +73,9 @@ function Tablero(){
         }
     }
     this.lucesEncendidas=()=>{
+        if (this.luces[0][1]==1){
+            return 1;
+        }
         return 0;
     }
 
