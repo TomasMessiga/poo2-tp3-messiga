@@ -38,14 +38,14 @@ test("Prueba tablero al encenderse",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(1,1);
     const tableroUtil=tableroArmado.prueba();
-    console.log(tableroUtil);
-    expect(Object.tableroUtil.name=="Tablero").toBe(true);
+    console.log(Object.tableroUtil);
+    expect(Object.tableroUtil.name!=undefined).toBe(true);
 })
 test("Prueba tablero al encenderse (no funciona el tablero)",()=>{
     const tableroArmado=new Tablero();
     const tableroUtil=tableroArmado.prueba();
-    console.log(tableroUtil);
-    expect(Object.tableroUtil.name=="Tablero").toBe(true);
+    console.log(Object.tableroUtil);
+    expect(Object.tableroUtil.name!=undefined).toBe(true);
 })
 
 
