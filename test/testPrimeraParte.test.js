@@ -166,20 +166,19 @@ test("Prueba tablero (luces encendidas) 4",()=>{
 test("Prueba tablero (error en dimesiones)",()=>{
     const tableroArmado=new Tablero();
     try{
-        tableroArmado.agragarLuces(0,-1);
+        tableroArmado.agragarLuces(-1,-1);
     } catch (e){
         expect(e).toBe("Error en las dimensiones establecidas");
     }
 })
-
-
 test("Prueba tablero luces (error en dimesiones)",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado.prueba();
     try{
-        tablero.encender([0,0],[1,-1]);
+        tablero.encender([0,0],[-1,-1]);
     } catch (e){
         expect(e).toBe("Error en las dimensiones establecidas");
     }
 })
+
