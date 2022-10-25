@@ -1,5 +1,15 @@
 const Tablero=require("../objetos/tablero.js");
 
+const contadorDeLucesActivas=(arreglo)=>{
+    let cont=0
+    arreglo.forEach(element => {
+        if (element==1){
+            cont++;
+        }
+    });
+    return cont;
+}
+
 test("Prueba tablero: incorporar luces (cant 1)",()=>{
     const tablero=new Tablero();
     tablero.agragarLuces(1,1);
@@ -40,7 +50,7 @@ test("Prueba encender tablero 1",()=>{
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado;
     tablero.encender([0,0],[0,0]);
-    expect(tablero.luces[0][0]).toBe(1);
+    expect(contadorDeLucesActivas(tablero.luces)).toBe(1);
 })
 
 
