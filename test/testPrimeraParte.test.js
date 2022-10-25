@@ -21,7 +21,12 @@ test("Prueba tablero: incorporar luces (cant 10000)",()=>{
     expect(tablero.lucesTotales()).toBe(10000);
 })
 
-
+test("Prueba tablero: incorporar luces (cant 10000)",()=>{
+    const tableroArmado=new TableroInactivo();
+    tableroArmado.agragarLuces(100,100);
+    const tablero=tableroArmado.encender();
+    expect(tablero==='Tablero').toBe(true);
+})
 
 
 
