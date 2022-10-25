@@ -32,6 +32,11 @@ function Tablero(){
         });
         return cont;
     }
+    this.encender=function(){
+        let tableroUtil=new Tablero();
+        tableroUtil.luces=this.luces;
+        return tableroUtil;
+    }
 
 
 }
