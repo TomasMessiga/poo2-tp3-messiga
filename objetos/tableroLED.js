@@ -1,7 +1,8 @@
 
 /** indicaciones
+ *  [(estado de la luz),(intensidad de la luz)]
  *  0 (luz inactiva)
- *  1 (luz activa)
+ *  [1,10] (luz activa que describe una determinada intensidad)
  */
  
  const numeroPositivo=function(numero){
