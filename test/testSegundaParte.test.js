@@ -99,9 +99,9 @@ test("Prueba apagar tablero 2",()=>{
 })
 test("Prueba apagar tablero 3",()=>{
     const tableroArmado=new Tablero();
-    tableroArmado.agragarLuces(100,100);
+    tableroArmado.agragarLuces(2,2);
     const tablero=tableroArmado.prueba();
-    tablero.encender([2,2],[2,2]);
+    tablero.encender([0,0],[1,1]);
     tablero.apagar([0,0],[2,2]);
     expect(contadorDeLucesActivas(tablero.luces)).toBe(0);
 })
