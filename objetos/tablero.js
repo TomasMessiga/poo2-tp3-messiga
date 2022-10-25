@@ -73,10 +73,15 @@ function Tablero(){
         }
     }
     this.lucesEncendidas=()=>{
-        if (this.luces[0][0]==1){
-            return 1;
+        let cont=0;
+        for (let i=0;i<this.luces.length;i++){
+            for (let j=0;j<this.luces[i].length;j++){
+                if (this.luces[i][j]==1){
+                    cont++;
+                }
+            }
         }
-        return 0;
+        return cont;
     }
 
 }
