@@ -129,7 +129,7 @@ function Tablero(){
                 }
             }
         }
-        return lucesActivas;
+        return cont;
     }
 
 }
