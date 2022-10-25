@@ -18,6 +18,9 @@ function Tablero(){
         numeroPositivo(cord1[1])
         numeroPositivo(cord2[0])
         numeroPositivo(cord2[1])
+        if (cord2[0]<cord1[0] || cord2[1]<cord1[1]){
+            throw("")
+        }
     }
 
     this.esTablero=function(){
@@ -27,8 +30,7 @@ function Tablero(){
         return true;
     }
     this.agragarLuces=function(filas,columnas){
-        numeroPositivo(filas)
-        numeroPositivo(columnas)
+        numeroEnRangoNumericoPositivo()
         for (let i=0;i<filas;i++){
             let filaAuxiliar=new Array();
             for (let f=0;f<columnas;f++){
