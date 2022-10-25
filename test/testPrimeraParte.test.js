@@ -119,5 +119,5 @@ test("Prueba cambiar tablero 2",()=>{
     const tablero=tableroArmado;
     tablero.encender([0,0],[2,2]);
     tablero.cambiar([0,0],[2,3]);
-    expect(contadorDeLucesActivas(tablero.luces)).toBe(10000-9+3);
+    expect(contadorDeLucesActivas(tablero.luces)).toBe(3);
 })

@@ -59,17 +59,7 @@ function Tablero(){
             }
         }
     }
-    this.cambiar=function(cord1,cord2){
-        for (let i=0;i<this.luces.length;i++){
-            for (let j=0;j<this.luces[i].length;j++){
-                if (this.luces[i][j]==1){
-                    this.luces[i][j]==0;
-                } else {
-                    this.luces[i][j]==1;
-                }
-            }
-        }
-    }
+
 
 }
 
