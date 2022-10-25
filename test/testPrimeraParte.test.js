@@ -1,5 +1,4 @@
 const Tablero=require("../objetos/tablero.js");
-const TableroNull = require("../objetos/tableroNull.js");
 
 const contadorDeLucesActivas=(arreglo)=>{
     var cont=0
