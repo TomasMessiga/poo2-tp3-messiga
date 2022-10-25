@@ -34,6 +34,7 @@ function Tablero(){
         }
         return true;
     }
+    //refactor loops
     this.agragarLuces=function(filas,columnas){
         numeroPositivo(filas)
         numeroPositivo(columnas)
@@ -64,17 +65,27 @@ function Tablero(){
     }
 
     
-
+    //refactor loop
     this.encender=function(cord1,cord2){
         numeroEnRangoNumericoPositivo(cord1,cord2)
+        const efectuarEncendido=function(luz,luzIndice,luzFila){
+            return 1;
+        }
+
+        this.luces.forEach(fila,indiceFila => {
+            this.luces[indiceFila]=fila.map(efectuarEncendido());
+        });
+
+/*
         for (let i=0;i<this.luces.length;i++){
             for (let j=0;j<this.luces[i].length;j++){
                 if (i>=cord1[0] && i<=cord2[0] && j>=cord1[1] && j<=cord2[1]){
                     this.luces[i][j]=1;
                 }
             }
-        }
+        } */
     }
+    
     this.apagar=function(cord1,cord2){
         numeroEnRangoNumericoPositivo(cord1,cord2)
         for (let i=0;i<this.luces.length;i++){
@@ -112,6 +123,7 @@ function Tablero(){
     }
 
 }
+
 
 
 module.exports=Tablero;
