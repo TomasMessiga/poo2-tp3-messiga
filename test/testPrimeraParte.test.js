@@ -113,3 +113,11 @@ test("Prueba cambiar tablero 1",()=>{
     tablero.cambiar([0,0],[0,1]);
     expect(tablero.luces[0][0]+tablero.luces[0][1]).toBe(1);
 })
+test("Prueba cambiar tablero 2",()=>{
+    const tableroArmado=new Tablero();
+    tableroArmado.agragarLuces(100,100);
+    const tablero=tableroArmado;
+    tablero.encender([0,0],[2,2]);
+    tablero.cambiar([0,0],[2,3]);
+    expect(contadorDeLucesActivas(tablero.luces)).toBe(10000-9+3);
+})
