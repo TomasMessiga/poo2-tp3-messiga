@@ -2,11 +2,12 @@ const Tablero=require("../objetos/tablero.js");
 
 const contadorDeLucesActivas=(arreglo)=>{
     var cont=0
-    arreglo.forEach(element => {
-        console.log(element+" ")
-        if (element==1){
-            cont++;
-        }
+    arreglo.forEach(aux => {
+        aux.forEach(element => {
+            if (element==1){
+                cont++;
+            }
+        });
     });
     return cont;
 }
