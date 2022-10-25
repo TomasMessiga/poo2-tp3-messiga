@@ -95,12 +95,16 @@ function Tablero(){
                 }
             }
         }
-        */
+       
         for (let i=cord1[0];i<=cord2[0];i++){
             for (let j=cord1[1];j<=cord2[1];j++){
                     this.luces[i][j]=1;
             }
-        } 
+        } */
+        const mapear=function(luz){return 1;};
+        this.luces.forEach(aux1 => {
+            aux1.map(filtrado);   
+        });
 
     }
     
@@ -126,7 +130,6 @@ function Tablero(){
         this.luces.forEach(aux1 => {
             cont+=(aux1.filter(filtrado)).length;   
         });
-
         return cont;
     }
 
