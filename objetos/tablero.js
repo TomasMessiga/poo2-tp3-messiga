@@ -64,10 +64,10 @@ function Tablero(){
             for (let j=0;j<this.luces[i].length;j++){
                 if (i>=cord1[0] && i<=cord2[0] && j>=cord1[1] && j<=cord2[1]){
                     if (this.luces[i][j]==1){
-                        this.luces[i][j]==0;
+                 //       this.luces[i][j]==0;
                     } else {
-                        this.luces[i][j]==1;
-                    }                
+                //        this.luces[i][j]==1;
+                   }                
                 }
             }
         }
