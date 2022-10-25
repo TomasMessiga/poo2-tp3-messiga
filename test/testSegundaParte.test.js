@@ -115,15 +115,15 @@ test("Prueba cambiar tablero 1",()=>{
     const tablero=tableroArmado.prueba();
     tablero.encender([0,0],[0,0]);
     tablero.cambiar([0,0],[0,1]);
-    expect(tablero.luces[0][0]+tablero.luces[0][1]).toBe(1);
+    expect(tablero.luces[0][0]+tablero.luces[0][1]).toBe(2);
 })
 test("Prueba cambiar tablero 2",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado.prueba();
     tablero.encender([0,0],[2,2]);
-    tablero.cambiar([0,0],[2,3]);
-    expect(contadorDeLucesActivas(tablero.luces)).toBe(3);
+    tablero.cambiar([0,0],[2,2]);
+    expect(contadorDeLucesActivas(tablero.luces)).toBe(9);
 })
 test("Prueba cambiar tablero 3",()=>{
     const tableroArmado=new Tablero();
@@ -131,7 +131,7 @@ test("Prueba cambiar tablero 3",()=>{
     const tablero=tableroArmado.prueba();
     tablero.encender([0,0],[99,99]);
     tablero.cambiar([0,0],[99,99]);
-    expect(contadorDeLucesActivas(tablero.luces)).toBe(0);
+    expect(contadorDeLucesActivas(tablero.luces)).toBe(100*100);
 })
 
 

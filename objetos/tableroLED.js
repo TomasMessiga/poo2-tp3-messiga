@@ -44,6 +44,9 @@ const alterarIntensidad={
         }
         return estado;
     },
+    sumarDoble:function(estado){
+        return this.sumar(estado)(this.sumar(estado));
+    }
 }
 
 const TableroNull =function(){
@@ -116,7 +119,7 @@ this.cambiar=function(cord1,cord2){
     numeroEnRangoNumericoPositivo(cord1,cord2)
     for (let i=cord1[0];i<=cord2[0];i++){
         for (let j=cord1[1];j<=cord2[1];j++){
-            this.luces[i][j]=estadoOpuesto[this.luces[i][j]];
+            this.luces[i][j]=alterarIntensidad.sumarDoble(this.luces[i][j]);
         }
     } 
 }
