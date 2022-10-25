@@ -90,10 +90,8 @@ function Tablero(){
 */
 
         for (let i=cord1[0];i<=cord2[0];i++){
-            for (let j=cord1[1];j<=cord1[i].length;j++){
-                if (i>=cord1[0] && i<=cord2[0] && j>=cord1[1] && j<=cord2[1]){
+            for (let j=cord1[1];j<=cord2[1].length;j++){
                     this.luces[i][j]=1;
-                }
             }
         } 
     }
