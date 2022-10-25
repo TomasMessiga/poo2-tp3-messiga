@@ -165,7 +165,7 @@ test("Prueba tablero (luces encendidas) 4",()=>{
     tablero.encender([0,0],[99,99]);
     tablero.apagar([0,0],[0,0]);
     tablero.apagar([0,0],[0,0]);
-    expect(tablero.lucesEncendidas()).toBe(100*100);
+    expect(tablero.lucesEncendidas()).toBe(0);
 })
 
 
