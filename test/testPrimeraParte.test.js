@@ -20,3 +20,8 @@ test("Prueba tablero: incorporar luces (cant 16)",()=>{
     tablero.agragarLuces(4,4);
     expect(tablero.lucesTotales()).toBe(16);
 })
+test("Prueba tablero: incorporar luces (cant 100000)",()=>{
+    const tablero=new Tablero();
+    tablero.agragarLuces(100,100);
+    expect(tablero.lucesTotales()).toBe(100000);
+})
