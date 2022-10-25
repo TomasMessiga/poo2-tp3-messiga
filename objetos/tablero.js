@@ -6,7 +6,7 @@
  
 
 function Tablero(){
-    this.luces=new Array();
+    this.luces=[];
 
     const numeroPositivo=function(numero){
         if (numero<=0){
