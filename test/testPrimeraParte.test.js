@@ -176,7 +176,7 @@ test("Prueba tablero luces (error en dimesiones)",()=>{
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado.prueba();
     try{
-        tablero.apagar([0,0],[-1,-1]);
+        tablero.cambiar([0,0],[-1,-1]);
         throw("")
     } catch (e){
         expect(e).toBe("Error en las dimensiones establecidas");
