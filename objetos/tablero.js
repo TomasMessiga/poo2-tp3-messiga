@@ -116,8 +116,7 @@ function Tablero(){
         numeroEnRangoNumericoPositivo(cord1,cord2)
         for (let i=cord1[0];i<=cord2[0];i++){
             for (let j=cord1[1];j<=cord2[1];j++){
-                this.luces[i][j]=estadoOpuesto(this.luces[i][j]);
-
+                this.luces[i][j]=estadoOpuesto[this.luces[i][j]];
             }
         } 
     }
