@@ -41,12 +41,12 @@ const alterarIntensidad={
     },
 
     restar:function(estado){
-        try{
-            var errorIntencional=1/estado;
-            return estado-1;
-        } catch (e) {
+        if (estado>0){
+             return estado-1;
+        }
+           
             return estado;
-        }    
+          
     },
 }
 
