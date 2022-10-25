@@ -2,7 +2,10 @@
 /** indicaciones
  *  0 (luz inactiva)
  *  1 (luz activa)
- */ 
+ */
+const Tablero = require("../../../../../AppData/Local/Temp/Temp1_TPTDDcollaredaJuan-main[1].zip/TPTDDcollaredaJuan-main/clases/tablero");
+
+ 
 
 function TableroInactivo(){
     this.luces=new Array();
@@ -30,6 +33,9 @@ function TableroInactivo(){
             });       
         });
         return cont;
+    }
+    this.encender=function(){
+        return new Tablero(this.luces);
     }
 
 }
