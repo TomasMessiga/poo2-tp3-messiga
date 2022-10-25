@@ -61,7 +61,7 @@ function Tablero(){
     }
     this.cambiar=function(cord1,cord2){
         this.luces[0][0]=1;
-        this.luces[0][1]=1;
+        this.luces[0][1]=0;
     }
 
 }
