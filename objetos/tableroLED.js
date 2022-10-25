@@ -40,7 +40,7 @@ const alterarIntensidad={
         }
     },
 
-    restar:function(estado){console.log(estado)
+    restar:function(estado){
         try{
             var errorIntencional=1/estado;
             return estado-1;
