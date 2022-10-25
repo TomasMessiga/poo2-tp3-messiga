@@ -3,7 +3,7 @@
  *  0 (luz inactiva)
  *  1 (luz activa)
  */
-const Tablero = require("../../../../../AppData/Local/Temp/Temp1_TPTDDcollaredaJuan-main[1].zip/TPTDDcollaredaJuan-main/clases/tablero");
+const Tablero = require("../tablero.js");
 
  
 
