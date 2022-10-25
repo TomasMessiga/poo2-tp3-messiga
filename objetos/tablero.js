@@ -42,7 +42,6 @@ function Tablero(){
         this.lucesEncendidas=()=>{return 0}
     }
 
-    //refactor loops
     this.agragarLuces=function(filas,columnas){
         numeroPositivo(filas)
         numeroPositivo(columnas)
@@ -55,6 +54,7 @@ function Tablero(){
             this.luces.push(filaAuxiliar);
         }
     }
+
     this.lucesTotales=function(){
         let cont=0;
         this.luces.forEach(aux1 => {
@@ -63,7 +63,9 @@ function Tablero(){
             });       
         });
         return cont;
-    }
+    }  
+
+
     this.prueba=function(){
         if (this.luces==undefined){
             return new TableroNull();
