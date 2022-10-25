@@ -13,6 +13,12 @@ function Tablero(){
             throw ("Error en las dimensiones establecidas")
         }
     }
+    const numeroEnRangoNumericoPositivo(cord1,cord2){
+        numeroPositivo(cord1[0])
+        numeroPositivo(cord1[1])
+        numeroPositivo(cord2[0])
+        numeroPositivo(cord2[1])
+    }
 
     this.esTablero=function(){
         if (this.lucesTotales()==0){
