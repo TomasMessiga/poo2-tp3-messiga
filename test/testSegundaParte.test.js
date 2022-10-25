@@ -161,10 +161,10 @@ test("Prueba tablero (luces encendidas) 4",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado.prueba();
-    tablero.encender([0,0],[50,50]);
-    tablero.encender([0,0],[50,50]);
-    tablero.apagar([0,0],[50,50]);
-    tablero.apagar([0,0],[50,50]);
+    tablero.encender([0,0],[99,99]);
+    tablero.encender([0,0],[99,99]);
+    tablero.apagar([0,0],[99,99]);
+    tablero.apagar([0,0],[99,99]);
     console.log(tablero.luces)
     expect(tablero.lucesEncendidas()).toBe(0);
 })
