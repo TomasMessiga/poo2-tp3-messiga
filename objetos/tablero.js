@@ -65,7 +65,7 @@ function Tablero(){
         return cont;
     }
     this.prueba=function(){
-        if (this.lucesTotales()==0){
+        if (this.luces==undefined){
             return new TableroNull();
         }      
         let tableroUtil=new Tablero();
