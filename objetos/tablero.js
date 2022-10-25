@@ -8,6 +8,7 @@
 
 function Tablero(){
     this.luces=new Array();
+    this.limites=[0,0];
 
     const numeroPositivo=function(numero){
         if (numero<=0){
@@ -24,9 +25,14 @@ function Tablero(){
         numeroNoNegativo(cord1[1])
         numeroNoNegativo(cord2[0])
         numeroNoNegativo(cord2[1])
-        if (cord2[0]<cord1[0] || cord2[1]<cord1[1]){
+        if (cord2[0]<cord1[0] || cord2[1]<cord1[1] ){
             throw("Error en el rango establecido")
         }
+    }
+
+    const estadoOpuesto={
+        1:0,
+        0:1,
     }
 
     this.esTablero=function(){
@@ -39,6 +45,8 @@ function Tablero(){
     this.agragarLuces=function(filas,columnas){
         numeroPositivo(filas)
         numeroPositivo(columnas)
+        this.limites[0]=filas;
+        this.limites[1]=columnas;
         for (let i=0;i<filas;i++){
             let filaAuxiliar=new Array();
             for (let f=0;f<columnas;f++){
@@ -81,8 +89,8 @@ function Tablero(){
         (this.luces).forEach(analizarColumna);
 */
 
-        for (let i=0;i<this.luces.length;i++){
-            for (let j=0;j<this.luces[i].length;j++){
+        for (let i=cord1[0];i<=cord2[0];i++){
+            for (let j=cord1[1];j<=cord1[i].length;j++){
                 if (i>=cord1[0] && i<=cord2[0] && j>=cord1[1] && j<=cord2[1]){
                     this.luces[i][j]=1;
                 }
