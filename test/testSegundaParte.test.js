@@ -104,7 +104,7 @@ test("Prueba apagar tablero 3",()=>{
     tablero.encender([0,1],[0,1]);
     tablero.encender([0,0],[0,1]);
     tablero.apagar([0,0],[0,0]);
-    tablero.apagar([0,0],[0,0]);console.log(tablero.luces)
+    tablero.apagar([0,0],[0,0]);
     expect(contadorDeLucesActivas(tablero.luces)).toBe(1);
 })
 
