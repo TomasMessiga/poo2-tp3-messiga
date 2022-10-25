@@ -46,14 +46,15 @@ test("Prueba tablero al encenderse (no funciona el tablero)",()=>{
     expect(tableroUtil==undefined).toBe(true);
 })
 
-/*
+
 test("Prueba encender tablero 1",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado;
     tablero.encender([0,0],[0,0]);
-    expect(contadorDeLucesActivas(tablero.luces)).toBe(1);
+    expect(tablero.luces[0][0]).toBe(1);
 })
+/**
 test("Prueba encender tablero 2",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
@@ -62,4 +63,4 @@ test("Prueba encender tablero 2",()=>{
     expect(contadorDeLucesActivas(tablero.luces)).toBe(9);
 })
 
-**/
+ */
