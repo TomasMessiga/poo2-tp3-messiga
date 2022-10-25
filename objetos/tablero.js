@@ -76,6 +76,7 @@ function Tablero(){
         }
     }
     this.apagar=function(cord1,cord2){
+        numeroEnRangoNumericoPositivo(cord1,cord2)
         for (let i=0;i<this.luces.length;i++){
             for (let j=0;j<this.luces[i].length;j++){
                 if (i>=cord1[0] && i<=cord2[0] && j>=cord1[1] && j<=cord2[1]){
