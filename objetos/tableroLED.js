@@ -42,7 +42,7 @@ const alterarIntensidad={
 
     restar:function(estado){
         try{
-            var errorIntencional=1/estado;
+            var errorIntencional=1/estado;console.log(errorIntencional)
             return estado-1;
         } catch (e) {
             return estado;
