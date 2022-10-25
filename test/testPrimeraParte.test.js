@@ -1,4 +1,4 @@
-const Tablero=require("../objetos/Tablero.js");
+const Tablero=require("../objetos/tablero.js");
 
 test("Prueba tablero",()=>{
     const tablero=new Tablero();
