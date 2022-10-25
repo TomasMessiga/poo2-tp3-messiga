@@ -46,6 +46,7 @@ test("Prueba tablero al encenderse (no funciona el tablero)",()=>{
     const tableroArmado=new Tablero();
     const tableroUtil=tableroArmado.prueba();
     const proto = Object.getPrototypeOf;
+    console.log(proto(tableroUtil).constructor);
     expect(proto(tableroUtil).constructor === TableroNull).toBe(true);
 })
 
