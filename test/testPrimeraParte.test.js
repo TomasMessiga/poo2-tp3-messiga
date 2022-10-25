@@ -180,6 +180,7 @@ test("Prueba tablero luces (error en dimesiones)",()=>{
         tablero.encender(0,-1);
         var error=1/0;
     } catch (e){
+        console.log(8)
         expect(e).toBe("Error en las dimensiones establecidas");
     }
 })
