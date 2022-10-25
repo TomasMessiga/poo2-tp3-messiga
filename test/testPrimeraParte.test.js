@@ -121,3 +121,11 @@ test("Prueba cambiar tablero 2",()=>{
     tablero.cambiar([0,0],[2,3]);
     expect(contadorDeLucesActivas(tablero.luces)).toBe(3);
 })
+test("Prueba cambiar tablero 3",()=>{
+    const tableroArmado=new Tablero();
+    tableroArmado.agragarLuces(100,100);
+    const tablero=tableroArmado;
+    tablero.encender([0,0],[10000,10000]);
+    tablero.cambiar([0,0],[10000,10000]);
+    expect(contadorDeLucesActivas(tablero.luces)).toBe(0);
+})
