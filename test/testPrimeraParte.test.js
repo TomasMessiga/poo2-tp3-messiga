@@ -1,4 +1,5 @@
 const Tablero=require("../objetos/tablero.js");
+const TableroNull = require("../objetos/tableroNull.js");
 
 const contadorDeLucesActivas=(arreglo)=>{
     var cont=0
@@ -44,8 +45,8 @@ test("Prueba tablero al encenderse",()=>{
 test("Prueba tablero al encenderse (no funciona el tablero)",()=>{
     const tableroArmado=new Tablero();
     const tableroUtil=tableroArmado.prueba();
-    console.log(Object.tableroUtil.name);
-    expect(Object.tableroUtil.name!=undefined).toBe(true);
+    const proto = Object.getPrototypeOf;
+    expect(proto(tableroUtil).constructor === TableroNull).toBe(true);
 })
 
 
