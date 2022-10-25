@@ -7,6 +7,6 @@ test("Prueba tablero",()=>{
 
 test("Prueba tablero: incorporar luces (cant 1)",()=>{
     const tablero=new Tablero();
-    tablero.agragarLuces(1);
+    tablero.agragarLuces(1,1);
     expect(tablero.lucesTotales()).toBe(1);
 })

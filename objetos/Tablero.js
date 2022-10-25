@@ -6,7 +6,7 @@ function Tablero(){
     this.esTablero=function(){
         return true;
     }
-    this.agragarLuces=function(cantidad){
+    this.agragarLuces=function(fila,columna){
         this.luces.push(0);
     }
     this.lucesTotales=function(){
