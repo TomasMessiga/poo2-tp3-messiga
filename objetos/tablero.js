@@ -34,12 +34,7 @@ function Tablero(){
         0:1,
     }
 
-    this.esTablero=function(){
-        if (this.lucesTotales()==0){
-            return false;
-        }
-        return true;
-    }
+
     //refactor loops
     this.agragarLuces=function(filas,columnas){
         numeroPositivo(filas)
