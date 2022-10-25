@@ -79,3 +79,11 @@ test("Prueba encender tablero 4",()=>{
 
 
 
+test("Prueba apagar tablero 1",()=>{
+    const tableroArmado=new Tablero();
+    tableroArmado.agragarLuces(100,100);
+    const tablero=tableroArmado;
+    tablero.encender([0,0],[100,100]);
+    tablero.apagar([0,0],[0,0]);
+    expect(contadorDeLucesActivas(tablero.luces)).toBe(10000-1);
+})
