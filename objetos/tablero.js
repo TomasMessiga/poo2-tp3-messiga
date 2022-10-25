@@ -33,9 +33,7 @@ function Tablero(){
         return cont;
     }
     this.encender=function(){
-        if (this.lucesTotales()==0){
-            return undefined;
-        }        
+  
         let tableroUtil=new Tablero();
         tableroUtil.luces=this.luces;
         return tableroUtil;

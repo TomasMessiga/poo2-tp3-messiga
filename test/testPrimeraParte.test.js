@@ -31,7 +31,7 @@ test("Prueba tablero al encenderse",()=>{
 test("Prueba tablero al encenderse (no funciona el tablero)",()=>{
     const tableroArmado=new Tablero();
     const tableroUtil=tableroArmado.encender();
-    expect(tableroArmado==undefined).toBe(true);
+    expect(tableroUtil==undefined).toBe(true);
 })
 
 
