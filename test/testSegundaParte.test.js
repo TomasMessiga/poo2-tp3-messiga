@@ -159,12 +159,13 @@ test("Prueba tablero (luces encendidas) 3",()=>{
 })
 test("Prueba tablero (luces encendidas) 4",()=>{
     const tableroArmado=new Tablero();
-    tableroArmado.agragarLuces(100,100);
+    tableroArmado.agragarLuces(2,2);
     const tablero=tableroArmado.prueba();
-    tablero.encender([0,0],[99,99]);
-    tablero.encender([0,0],[99,99]);
-    tablero.apagar([0,0],[0,0]);
-    tablero.apagar([0,0],[0,0]);
+    tablero.encender([0,0],[1,1]);
+    tablero.encender([0,0],[1,1]);
+    tablero.apagar([0,0],[1,1]);
+    tablero.apagar([0,0],[1,1]);
+    console.log(tablero.luces)
     expect(tablero.lucesEncendidas()).toBe(0);
 })
 
