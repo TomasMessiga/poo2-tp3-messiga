@@ -73,7 +73,7 @@ test("Prueba encender tablero 4",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado.prueba();
-    tablero.encender([0,0],[100,100]);
+    tablero.encender([0,0],[99,99]);
     expect(contadorDeLucesActivas(tablero.luces)).toBe(100*100);
 })
 
@@ -83,7 +83,7 @@ test("Prueba apagar tablero 1",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado.prueba();
-    tablero.encender([0,0],[100,100]);
+    tablero.encender([0,0],[99,99]);
     tablero.apagar([0,0],[0,0]);
     expect(contadorDeLucesActivas(tablero.luces)).toBe(10000-1);
 })
@@ -91,7 +91,7 @@ test("Prueba apagar tablero 2",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado.prueba();
-    tablero.encender([0,0],[100,100]);
+    tablero.encender([0,0],[99,99]);
     tablero.apagar([0,0],[2,2]);
     expect(contadorDeLucesActivas(tablero.luces)).toBe(10000-9);
 })
@@ -99,8 +99,8 @@ test("Prueba apagar tablero 3",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado.prueba();
-    tablero.encender([0,0],[100,100]);
-    tablero.apagar([0,0],[10000,10000]);
+    tablero.encender([0,0],[99,99]);
+    tablero.apagar([0,0],[99,99]);
     expect(contadorDeLucesActivas(tablero.luces)).toBe(0);
 })
 
@@ -125,8 +125,8 @@ test("Prueba cambiar tablero 3",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado.prueba();
-    tablero.encender([0,0],[10000,10000]);
-    tablero.cambiar([0,0],[10000,10000]);
+    tablero.encender([0,0],[99,99]);
+    tablero.cambiar([0,0],[99,99]);
     expect(contadorDeLucesActivas(tablero.luces)).toBe(0);
 })
 
@@ -156,7 +156,7 @@ test("Prueba tablero (luces encendidas) 4",()=>{
     const tableroArmado=new Tablero();
     tableroArmado.agragarLuces(100,100);
     const tablero=tableroArmado.prueba();
-    tablero.encender([0,0],[100,100]);
+    tablero.encender([0,0],[99,99]);
     tablero.apagar([6,6],[6,7]);
     expect(tablero.lucesEncendidas()).toBe(10000-2);
 })
