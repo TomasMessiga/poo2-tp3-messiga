@@ -8,6 +8,12 @@
 function Tablero(){
     this.luces=new Array();
 
+    const numeroPositivo=function(numero){
+        if (numero<=0){
+            throw ("Error en las dimensiones establecidas")
+        }
+    }
+
     this.esTablero=function(){
         if (this.lucesTotales()==0){
             return false;
@@ -15,6 +21,8 @@ function Tablero(){
         return true;
     }
     this.agragarLuces=function(filas,columnas){
+        numeroPositivo(filas)
+        numeroPositivo(columnas)
         for (let i=0;i<filas;i++){
             let filaAuxiliar=new Array();
             for (let f=0;f<columnas;f++){
