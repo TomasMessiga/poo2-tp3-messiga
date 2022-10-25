@@ -72,7 +72,9 @@ function Tablero(){
             }
         }
     }
-
+    this.lucesEncendidas=()=>{
+        return 0;
+    }
 
 }
 
