@@ -122,12 +122,9 @@ function Tablero(){
     }
     this.lucesEncendidas=()=>{
         let cont=0;
+        const filtrado=function(luz){return luz==1;};
         this.luces.forEach(aux1 => {
-            aux1.forEach(aux2 => {
-                if (aux2==1){
-                    cont++
-                }
-            });       
+            cont+=(aux1.filter(filtrado)).length;   
         });
 
         return cont;
