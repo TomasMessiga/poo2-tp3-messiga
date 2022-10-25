@@ -25,9 +25,22 @@ const numeroEnRangoNumericoPositivo=function(cord1,cord2){
     }
 }
 
-const estadoOpuesto={
-    1:0,
-    0:1,
+const alterarIntensidad={
+    sumar:function(estado){
+        try{
+            var errorIntencional=1/(estado-10);
+        } catch (e) {
+            throw("Limite de intensidad alcanzado");
+        }
+    },
+
+    restar:function(estado){
+        try{
+            var errorIntencional=1/estado;
+        } catch (e) {
+            throw("No se puede reducir estado de intensidad de una luz apagada");
+        }    
+    },
 }
 
 const TableroNull =function(){
@@ -81,7 +94,7 @@ this.encender=function(cord1,cord2){
     numeroEnRangoNumericoPositivo(cord1,cord2)
     for (let i=cord1[0];i<=cord2[0];i++){
         for (let j=cord1[1];j<=cord2[1];j++){
-                this.luces[i][j]=1;
+                this.luces[i][j]+=1;
         }
     }
 
@@ -91,7 +104,7 @@ this.apagar=function(cord1,cord2){
     numeroEnRangoNumericoPositivo(cord1,cord2)
     for (let i=cord1[0];i<=cord2[0];i++){
         for (let j=cord1[1];j<=cord2[1];j++){
-                this.luces[i][j]=0;
+                this.luces[i][j]-=1;
         }
     } 
 }
