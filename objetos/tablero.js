@@ -44,11 +44,11 @@ function Tablero(){
     this.encender=function(){
         let cont=0;
         this.luces.forEach(aux1,fil => {
-            aux1.forEach(aux2,col => {
-                if (aux2==1){
+            for(let i=0;i<aux1.length;i++) {
+                if (aux1[i]==1){
                     this.luces[fil][col]=1;
                 }            
-            });       
+            }       
         });
         return cont;    
     }
