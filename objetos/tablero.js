@@ -25,8 +25,8 @@ function Tablero(){
     }
     this.lucesTotales=function(){
         let cont=0;
-        this.luces.forEach(element => {
-            this.luces.forEach(element => {
+        this.luces.forEach(aux1 => {
+            this.luces.forEach(aux2 => {
                 cont++;
             });       
         });
@@ -42,9 +42,16 @@ function Tablero(){
     }
 
     this.encender=function(){
-        this.luces[0][0]=1;
+        let cont=0;
+        this.luces.forEach(aux1,fil => {
+            aux1.forEach(aux2,col => {
+                if (aux2==1){
+                    this.luces[fil][col]=1;
+                }            
+            });       
+        });
+        return cont;    
     }
-
 
 }
 
