@@ -82,11 +82,11 @@ function Tablero(){
             numeroEnRangoNumericoPositivo(cord1,cord2)
             for (let i=cord1[0];i<=cord2[0];i++){
                 for (let j=cord1[1];j<=cord2[1];j++){
-                        this.luces[i][j]=1;
+                        this.luces[i][j]=criterioCambio;
                 }
             }
         }
-        analizarRango(cord1,cord2,1)
+        analizarRango(cord1,cord2,1);
         /** 
         numeroEnRangoNumericoPositivo(cord1,cord2)
 
