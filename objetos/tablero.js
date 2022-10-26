@@ -38,6 +38,14 @@
     }
 
 
+    const analizarRango=function(cord1,cord2,arreglo,criterioCambio){      
+        numeroEnRangoNumericoPositivo(cord1,cord2)  
+        for (let i=cord1[0];i<=cord2[0];i++){
+            for (let j=cord1[1];j<=cord2[1];j++){
+                arreglo[i][j]=criterioCambio;
+            }
+        }
+    }
 
 function Tablero(){
     this.luces=undefined;
@@ -77,15 +85,6 @@ function Tablero(){
 
     
     this.encender=function(cord1,cord2){
-                    numeroEnRangoNumericoPositivo(cord1,cord2)
-
-        function analizarRango(cord1,cord2,arreglo,criterioCambio){        
-            for (let i=cord1[0];i<=cord2[0];i++){
-                for (let j=cord1[1];j<=cord2[1];j++){
-                        arreglo[i][j]=criterioCambio;
-                }
-            }
-        }
         analizarRango(cord1,cord2,this.luces,1);
         /** 
         numeroEnRangoNumericoPositivo(cord1,cord2)
