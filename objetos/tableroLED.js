@@ -26,10 +26,6 @@ const numeroEnRangoNumericoPositivo=function(cord1,cord2){
 }
 
 
-const estadoOpuesto={
-    1:0,
-    0:1,
-}
 const alterarIntensidad={
     sumar:function(estado){
         if (estado<10){
