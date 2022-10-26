@@ -28,6 +28,10 @@
         1:0,
         0:1,
     }
+    const estadoNuevo={
+        0:0,
+        1:1,
+    }
     
     const TableroNull =function(){
         this.luces=undefined;    
