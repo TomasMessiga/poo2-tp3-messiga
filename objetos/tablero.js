@@ -28,10 +28,7 @@
         1:0,
         0:1,
     }
-    const estadoNuevo={
-        0:0,
-        1:1,
-    }
+
     
     const TableroNull =function(){
         this.luces=undefined;    
@@ -89,11 +86,11 @@ function Tablero(){
 
     
     this.encender=function(cord1,cord2){
-        analizarRango(cord1,cord2,this.luces,estadoNuevo[1]);
+        analizarRango(cord1,cord2,this.luces,1);
     }
     
     this.apagar=function(cord1,cord2){
-        analizarRango(cord1,cord2,this.luces,estadoNuevo[0]);
+        analizarRango(cord1,cord2,this.luces,0);
     }
     this.cambiar=function(cord1,cord2){
         numeroEnRangoNumericoPositivo(cord1,cord2)
